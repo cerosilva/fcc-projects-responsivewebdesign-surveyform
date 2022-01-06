@@ -1,0 +1,184 @@
+<html>
+  <header><h1 id="title" class="text-center">Coffee Preference Survey</h1>
+    <p id="description" class="text-center">
+      We are working at developing a new product line for a coffee shop and would appreciate you taking some time out to answer our questions. 
+    </p>
+  </header>
+  <body>
+    <form id="survey-form">
+      <div class="coffee-opinions">
+        <label id="name-label" for="name">Name</label>
+        <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+      <div class="coffee-opinions">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+     <div class="coffee-opinions">
+      <label id="number-label" for="number"
+        >Birth Year<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="birthyear"
+        id="number"
+        min="1903"
+        max="2005"     
+        class="form-control"
+        placeholder="Birth Year"
+      />
+    </div> 
+      <div class="coffee-opinions">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select Occupation</option>
+        <option value="student">Student</option>
+        <option value="job">Employed</option>
+        <option value="learner">Self-Employed</option>
+        <option value="preferNo">Prefer not to say</option>
+        </select>
+    </div>
+      <div class="coffee-opinions">
+      <p> What time of day do you usually drink coffee?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          />Morning</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Afternoon</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Evening</label
+      >
+        <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Night</label
+      >
+        <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Anytime</label
+      >
+    </div>
+      <div class="coffee-opinions">
+      <p>Where do you prefer having your coffee?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="cafe"
+          type="radio"
+          class="input-radio"
+          />At a Cafe</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="street"
+          type="radio"
+          class="input-radio"
+        />Street Vendor</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="home"
+          type="radio"
+          class="input-radio"
+        />At Home</label
+      >      
+    </div>
+      <div class="form-group">
+      <p>
+        Which type of coffee do you prefer most?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="instant"
+          type="checkbox"
+          class="input-checkbox"
+        />Instant</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="freshlyground"
+          type="checkbox"
+          class="input-checkbox"
+        />Freshly ground</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="pods"
+          type="checkbox"
+          class="input-checkbox"
+        />Pods</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="preground"
+          type="checkbox"
+          class="input-checkbox"
+        />Pre Ground</label> 
+    </div>
+    <div class="form-group">
+      <p>What's your favourite brand(s) of coffee?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter the name(s) here..."
+      ></textarea>
+    </div>  
+      
+ <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>     
+    </form>
+  </body>
+  <footer>Thank you for taking the time to help us.</footer>
+  
+</html>
